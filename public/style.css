@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.options-container {
+    height: 3rem;
+    width: 3rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.tools-container {
+    display: flex;
+    height: 7rem;
+    width: 50rem;
+    background-color: #ffffff6e;
+    justify-content: space-around;
+    position: absolute;
+    top: 2rem;
+    left: 25vw;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.scale-tools {
+    animation-name: scale-tools;
+    animation-duration: 1s;
+}
+
+@keyframes scale-tools {
+    0% {
+        transform: scale(0.1);
+
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tools-container > * {
+    display: block;
+    width: 6rem;
+}
+
+.pencil-width-container input {
+    width: 90%;
+
+}
+
+.pencil-tool-container {
+    height: 5rem;
+    width: 7rem;
+    position: absolute;
+    top: 9rem;
+    left: 25vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    border-radius: 5px;
+    display: none;
+}
+.pencil-width-container {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pencil-color-container {
+    height: calc(100% - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pencil-color {
+    width: 1.2rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+.red {
+    background-color: red;
+}
+.black {
+    background-color: black;
+}
+.blue {
+    background-color: blue;
+}
+
+.eraser-tool-container {
+    height: 2rem;
+    width: 7rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 9rem;
+    left: 31.3rem;
+}
+.eraser-tool-container input {
+    width: 90%;
+}
+
+.sticky-container {
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    top: 12rem;
+    left: 50rem;
+}
+.header-container {
+    height: 2rem;
+    background-color: #f1f2f6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-container > * {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+.minimize {
+    background-color: #7bed9f;
+}
+.remove {
+    background-color: #ff4757;
+}
+
+.note-container {
+    height: calc(100% - 2rem);
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
